@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROBO: Mission Future</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+    <header class="top-bar">
+
+        <div class="brand">
+            <span class="brand-icon">🤖</span>
+            <span>ROBO</span>
+            <span class="brand-sub">MISSION FUTURE</span>
+        </div>
+
+        <div class="top-info">
+            <span id="missionNumber">MISSION 01</span>
+            <span id="progressText">1 / 5</span>
+            <span id="xpDisplay">✦ XP 0</span>
+
+            <button id="soundBtn" class="icon-btn" title="Sound">
+                🔊
+            </button>
+
+            <button id="helpBtn" class="icon-btn" title="Help">
+                ?
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN APP
+    ========================== -->
+
+    <main id="app">
+
+
+        <!-- =========================
+             HOME SCREEN
+        ========================== -->
+
+        <section id="homeScreen" class="screen active">
+
+            <div class="hero">
+
+                <div class="robot-big">
+                    🤖
+                </div>
+
+                <p class="eyebrow">
+                    ✦ INTERACTIVE ENGLISH ADVENTURE ✦
+                </p>
+
+                <h1>
+                    ROBO:
+                    <span>MISSION FUTURE</span>
+                </h1>
+
+                <p class="hero-description">
+                    Help Robo travel to the Future City while learning
+                    simple English about the technology of tomorrow.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button id="startMissionBtn" class="primary-btn">
+                        ▶ START MISSION
+                    </button>
+
+                    <button id="howToPlayBtn" class="secondary-btn">
+                        ? HOW TO PLAY
+                    </button>
+
+                </div>
+
+                <div class="feature-row">
+
+                    <div class="feature-card">
+                        <strong>5</strong>
+                        <span>MISSIONS</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <strong>Easy</strong>
+                        <span>ENGLISH</span>
+                    </div>
+
+                    <div class="feature-card">
+                        <strong>5+</strong>
+                        <span>GAMES</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW TO PLAY
+        ========================== -->
+
+        <section id="howToPlayScreen" class="screen">
+
+            <div class="page-box">
+
+                <div class="page-header">
+
+                    <div>
+                        <p class="eyebrow">MISSION GUIDE</p>
+
+                        <h2>
+                            HOW TO PLAY
+                        </h2>
+                    </div>
+
+                    <button id="backFromHowBtn" class="small-btn">
+                        ← Back
+                    </button>
+
+                </div>
+
+
+                <div class="guide-grid">
+
+                    <div class="guide-card">
+                        <div class="guide-icon">📖</div>
+                        <h3>1. Learn</h3>
+                        <p>
+                            Read the simple English lesson
+                            and learn useful technology words.
+                        </p>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">🔊</div>
+                        <h3>2. Listen</h3>
+                        <p>
+                            Listen to Robo and repeat the sentences.
+                        </p>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">🎮</div>
+                        <h3>3. Play</h3>
+                        <p>
+                            Complete the mini-game
+                            and collect energy.
+                        </p>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">⭐</div>
+                        <h3>4. Earn XP</h3>
+                        <p>
+                            Finish missions and unlock
+                            the Future City.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <button id="letsGoBtn" class="primary-btn">
+                    LET'S GO 🚀
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MISSION MAP
+        ========================== -->
+
+        <section id="mapScreen" class="screen">
+
+            <div class="page-box">
+
+                <div class="page-header">
+
+                    <div>
+                        <p class="eyebrow">ROBO'S JOURNEY</p>
+
+                        <h2>
+                            MISSION MAP
+                        </h2>
+                    </div>
+
+                    <button id="homeFromMapBtn" class="small-btn">
+                        ← Home
+                    </button>
+
+                </div>
+
+
+                <div class="mission-map">
+
+                    <!-- Mission 1 -->
+
+                    <div class="mission-card unlocked"
+                         data-mission="0">
+
+                        <div class="mission-number">
+                            01
+                        </div>
+
+                        <div class="mission-icon">
+                            ⚡
+                        </div>
+
+                        <div class="mission-info">
+
+                            <span class="mission-label">
+                                MISSION 01
+                            </span>
+
+                            <h3>
+                                Energy Run
+                            </h3>
+
+                            <p>
+                                Clean Energy
+                            </p>
+
+                        </div>
+
+                        <span class="mission-status">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <!-- Mission 2 -->
+
+                    <div class="mission-card locked"
+                         data-mission="1">
+
+                        <div class="mission-number">
+                            02
+                        </div>
+
+                        <div class="mission-icon">
+                            🧠
+                        </div>
+
+                        <div class="mission-info">
+
+                            <span class="mission-label">
+                                MISSION 02
+                            </span>
+
+                            <h3>
+                                AI Lab
+                            </h3>
+
+                            <p>
+                                Artificial Intelligence
+                            </p>
+
+                        </div>
+
+                        <span class="mission-status">
+                            🔒
+                        </span>
+
+                    </div>
+
+
+                    <!-- Mission 3 -->
+
+                    <div class="mission-card locked"
+                         data-mission="2">
+
+                        <div class="mission-number">
+                            03
+                        </div>
+
+                        <div class="mission-icon">
+                            🏠
+                        </div>
+
+                        <div class="mission-info">
+
+                            <span class="mission-label">
+                                MISSION 03
+                            </span>
+
+                            <h3>
+                                Smart Home
+                            </h3>
+
+                            <p>
+                                Smart Technology
+                            </p>
+
+                        </div>
+
+                        <span class="mission-status">
+                            🔒
+                        </span>
+
+                    </div>
+
+
+                    <!-- Mission 4 -->
+
+                    <div class="mission-card locked"
+                         data-mission="3">
+
+                        <div class="mission-number">
+                            04
+                        </div>
+
+                        <div class="mission-icon">
+                            🚗
+                        </div>
+
+                        <div class="mission-info">
+
+                            <span class="mission-label">
+                                MISSION 04
+                            </span>
+
+                            <h3>
+                                Future Road
+                            </h3>
+
+                            <p>
+                                Self-Driving Cars
+                            </p>
+
+                        </div>
+
+                        <span class="mission-status">
+                            🔒
+                        </span>
+
+                    </div>
+
+
+                    <!-- Mission 5 -->
+
+                    <div class="mission-card locked"
+                         data-mission="4">
+
+                        <div class="mission-number">
+                            05
+                        </div>
+
+                        <div class="mission-icon">
+                            🌍
+                        </div>
+
+                        <div class="mission-info">
+
+                            <span class="mission-label">
+                                MISSION 05
+                            </span>
+
+                            <h3>
+                                Save the Future
+                            </h3>
+
+                            <p>
+                                Technology & Environment
+                            </p>
+
+                        </div>
+
+                        <span class="mission-status">
+                            🔒
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MISSION SCREEN
+        ========================== -->
+
+        <section id="missionScreen" class="screen">
+
+            <div class="mission-container">
+
+
+                <!-- Mission Header -->
+
+                <div class="mission-header">
+
+                    <div>
+
+                        <p class="eyebrow" id="missionEyebrow">
+                            MISSION 01
+                        </p>
+
+                        <h2 id="missionTitle">
+                            Energy Run
+                        </h2>
+
+                        <p id="missionSubtitle">
+                            Clean Energy
+                        </p>
+
+                    </div>
+
+                    <button id="missionMapBtn"
+                            class="small-btn">
+                        Mission Map
+                    </button>
+
+                </div>
+
+
+                <!-- Robo Guide -->
+
+                <div class="robo-guide">
+
+                    <div class="robo-avatar">
+                        🤖
+                    </div>
+
+                    <div class="robo-message">
+
+                        <span>
+                            ROBO GUIDE
+                        </span>
+
+                        <p id="roboMessage">
+                            Welcome, future explorer!
+                            Let's learn something new.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Lesson -->
+
+                <div id="lessonArea"
+                     class="lesson-area">
+
+                    <div class="lesson-top">
+
+                        <span id="lessonCounter">
+                            1 / 3
+                        </span>
+
+                        <div class="lesson-progress">
+                            <div id="lessonProgressBar"></div>
+                        </div>
+
+                    </div>
+
+
+                    <article class="lesson-card">
+
+                        <div class="lesson-icon"
+                             id="lessonIcon">
+                            ⚡
+                        </div>
+
+                        <p class="lesson-label">
+                            EASY ENGLISH
+                        </p>
+
+                        <h2 id="lessonTitle">
+                            What is Clean Energy?
+                        </h2>
+
+                        <p id="lessonText"
+                           class="lesson-text">
+                            Clean energy comes from natural
+                            sources, like sunlight and wind.
+                        </p>
+
+
+                        <div class="lesson-actions">
+
+                            <button id="listenBtn"
+                                    class="primary-btn">
+                                🔊 LISTEN
+                            </button>
+
+                            <button id="repeatBtn"
+                                    class="secondary-btn">
+                                🔁 REPEAT
+                            </button>
+
+                            <button id="easyEnglishBtn"
+                                    class="secondary-btn">
+                                ✨ EASY ENGLISH
+                            </button>
+
+                        </div>
+
+
+                        <!-- Voice Speed -->
+
+                        <div class="voice-speed">
+
+                            <span>
+                                VOICE SPEED
+                            </span>
+
+                            <button class="speed-btn"
+                                    data-speed="0.6">
+                                0.6×
+                            </button>
+
+                            <button class="speed-btn active"
+                                    data-speed="0.8">
+                                0.8×
+                            </button>
+
+                            <button class="speed-btn"
+                                    data-speed="1">
+                                1×
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Key Idea -->
+
+                    <div class="knowledge-row">
+
+                        <div class="knowledge-card">
+
+                            <span>
+                                💡 KEY IDEA
+                            </span>
+
+                            <p id="keyIdea">
+                                Clean energy is energy
+                                from natural sources.
+                            </p>
+
+                        </div>
+
+                        <div class="knowledge-card">
+
+                            <span>
+                                📚 VOCABULARY
+                            </span>
+
+                            <p id="vocabulary">
+                                clean — natural — energy
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button id="roboGuideBtn"
+                            class="guide-link">
+                        🤖 Ask Robo Guide
+                    </button>
+
+
+                    <div class="bottom-actions">
+
+                        <button id="backMissionBtn"
+                                class="secondary-btn">
+                            ← Mission
+                        </button>
+
+                        <button id="startGameBtn"
+                                class="primary-btn">
+                            START THE GAME 🎮
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     GAME
+                ========================== -->
+
+                <div id="gameArea"
+                     class="game-area hidden">
+
+                    <div class="game-header">
+
+                        <div>
+                            <span>
+                                MISSION GAME
+                            </span>
+
+                            <h2 id="gameTitle">
+                                Energy Run
+                            </h2>
+                        </div>
+
+                        <button id="gameGuideBtn"
+                                class="small-btn">
+                            ? Guide
+                        </button>
+
+                    </div>
+
+
+                    <div class="game-stats">
+
+                        <div>
+                            <span>SCORE</span>
+                            <strong id="scoreDisplay">
+                                0
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>LIVES</span>
+                            <strong id="livesDisplay">
+                                ❤️❤️❤️
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>ENERGY</span>
+                            <strong id="energyDisplay">
+                                ⚡ 0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div id="gameBoard"
+                         class="game-board">
+
+                        <div id="gamePlayer"
+                             class="game-player">
+                            🤖
+                        </div>
+
+                        <div id="gameItems"
+                             class="game-items">
+                        </div>
+
+                    </div>
+
+
+                    <div class="game-goal">
+
+                        <strong>
+                            🎯 GOAL
+                        </strong>
+
+                        <span id="gameGoal">
+                            Collect clean energy!
+                        </span>
+
+                    </div>
+
+
+                    <div class="game-controls">
+
+                        <button id="leftBtn">
+                            ←
+                        </button>
+
+                        <button id="jumpBtn">
+                            ↑ JUMP
+                        </button>
+
+                        <button id="rightBtn">
+                            →
+                        </button>
+
+                    </div>
+
+                    <p class="keyboard-help">
+                        Keyboard:
+                        ← → SPACE
+                    </p>
+
+
+                    <button id="exitGameBtn"
+                            class="secondary-btn">
+                        EXIT GAME
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     KNOWLEDGE CHECK
+                ========================== -->
+
+                <div id="quizArea"
+                     class="quiz-area hidden">
+
+                    <div class="quiz-icon">
+                        🧠
+                    </div>
+
+                    <p class="eyebrow">
+                        KNOWLEDGE CHECK
+                    </p>
+
+                    <h2 id="quizQuestion">
+                        Which source of energy comes from the sun?
+                    </h2>
+
+
+                    <div id="quizOptions"
+                         class="quiz-options">
+
+                        <button class="quiz-option"
+                                data-answer="wind">
+                            A — Wind
+                        </button>
+
+                        <button class="quiz-option"
+                                data-answer="solar">
+                            B — Solar
+                        </button>
+
+                        <button class="quiz-option"
+                                data-answer="rock">
+                            C — Rock
+                        </button>
+
+                    </div>
+
+
+                    <div id="quizFeedback"
+                         class="quiz-feedback">
+                    </div>
+
+
+                    <div class="language-boost">
+
+                        <strong>
+                            ✦ LANGUAGE BOOST
+                        </strong>
+
+                        <p id="languageBoostText">
+                            Solar energy comes from the sun.
+                        </p>
+
+                    </div>
+
+
+                    <button id="quizEasyBtn"
+                            class="secondary-btn">
+                        ✨ Easy English
+                    </button>
+
+                    <button id="continueBtn"
+                            class="primary-btn">
+                        CONTINUE
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     MISSION COMPLETE
+                ========================== -->
+
+                <div id="completeArea"
+                     class="complete-area hidden">
+
+                    <div class="complete-icon">
+                        🏆
+                    </div>
+
+                    <p class="eyebrow">
+                        MISSION COMPLETE
+                    </p>
+
+                    <h2 id="completeTitle">
+                        Great Job, Explorer!
+                    </h2>
+
+                    <p id="completeMessage">
+                        You completed the mission.
+                    </p>
+
+
+                    <div class="reward-box">
+
+                        <div>
+                            <span>XP</span>
+                            <strong id="missionXP">
+                                +400
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>SCORE</span>
+                            <strong id="finalScore">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <p id="unlockText">
+                        Next mission unlocked!
+                    </p>
+
+
+                    <div class="complete-buttons">
+
+                        <button id="nextMissionBtn"
+                                class="primary-btn">
+                            NEXT MISSION
+                        </button>
+
+                        <button id="viewMapBtn"
+                                class="secondary-btn">
+                            VIEW MAP
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL SCREEN
+        ========================== -->
+
+        <section id="finalScreen"
+                 class="screen">
+
+            <div class="final-box">
+
+                <div class="final-robot">
+                    🤖
+                </div>
+
+                <p class="eyebrow">
+                    FINAL DESTINATION
+                </p>
+
+                <h1>
+                    MISSION COMPLETE
+                </h1>
+
+                <p>
+                    Welcome to the Future City!
+                </p>
+
+
+                <div class="final-stats">
+
+                    <div>
+                        <span>TOTAL XP</span>
+                        <strong id="totalXP">
+                            0
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>TOTAL SCORE</span>
+                        <strong id="totalScore">
+                            0
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>MISSIONS</span>
+                        <strong>
+                            5 / 5
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="final-actions">
+
+                    <button id="finalListenBtn"
+                            class="primary-btn">
+                        🔊 LISTEN
+                    </button>
+
+                    <button id="playAgainBtn"
+                            class="secondary-btn">
+                        PLAY AGAIN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         GUIDE MODAL
+    ========================== -->
+
+    <div id="guideModal"
+         class="modal hidden">
+
+        <div class="modal-box">
+
+            <button class="modal-close"
+                    data-close="guideModal">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🤖
+            </div>
+
+            <h2>
+                Robo Guide
+            </h2>
+
+            <p id="guideModalText">
+                Learn the lesson, listen to Robo,
+                play the game, and answer the quiz.
+            </p>
+
+            <button class="primary-btn"
+                    data-close="guideModal">
+                GOT IT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         EASY ENGLISH MODAL
+    ========================== -->
+
+    <div id="easyEnglishModal"
+         class="modal hidden">
+
+        <div class="modal-box">
+
+            <button class="modal-close"
+                    data-close="easyEnglishModal">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ✨
+            </div>
+
+            <p class="eyebrow">
+                EASY ENGLISH
+            </p>
+
+            <h2 id="easyEnglishTitle">
+                Simple Explanation
+            </h2>
+
+            <p id="easyEnglishText">
+                This is a simple explanation.
+            </p>
+
+            <button class="primary-btn"
+                    data-close="easyEnglishModal">
+                CONTINUE
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MISSION GUIDE MODAL
+    ========================== -->
+
+    <div id="missionGuideModal"
+         class="modal hidden">
+
+        <div class="modal-box">
+
+            <button class="modal-close"
+                    data-close="missionGuideModal">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🎮
+            </div>
+
+            <p class="eyebrow">
+                MISSION GUIDE
+            </p>
+
+            <h2 id="missionGuideTitle">
+                Energy Run
+            </h2>
+
+            <p id="missionGuideText">
+                Move Robo and collect energy.
+                Avoid obstacles and reach the goal.
+            </p>
+
+            <div class="control-guide">
+
+                <div>
+                    <span>←</span>
+                    <small>MOVE LEFT</small>
+                </div>
+
+                <div>
+                    <span>↑</span>
+                    <small>JUMP</small>
+                </div>
+
+                <div>
+                    <span>→</span>
+                    <small>MOVE RIGHT</small>
+                </div>
+
+            </div>
+
+            <button class="primary-btn"
+                    data-close="missionGuideModal">
+                LET'S PLAY
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PAUSE MODAL
+    ========================== -->
+
+    <div id="pauseModal"
+         class="modal hidden">
+
+        <div class="modal-box">
+
+            <div class="modal-icon">
+                ⏸️
+            </div>
+
+            <p class="eyebrow">
+                MISSION PAUSED
+            </p>
+
+            <h2>
+                Robo is waiting!
+            </h2>
+
+            <p>
+                Ready to continue your mission?
+            </p>
+
+            <div class="modal-actions">
+
+                <button id="tryAgainBtn"
+                        class="primary-btn">
+                    TRY AGAIN
+                </button>
+
+                <button id="exitMissionBtn"
+                        class="secondary-btn">
+                    EXIT GAME
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div id="toast"
+         class="toast">
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            Robo is ready!
+        </span>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <span>
+            🤖 ROBO: MISSION FUTURE
+        </span>
+
+        <span>
+            English Presentation
+        </span>
+
+    </footer>
+
+
+    <!-- IMPORTANT:
+         JavaScript must be loaded AFTER the HTML -->
+    <script src="script.js"></script>
+
+</body>
+</html>
